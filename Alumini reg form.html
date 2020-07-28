@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Alumni Registration</title>
+        <style>
+            #frm{
+                width: 70%;
+                background-position: center;
+                background-size: 100% 1000px;
+                background-color: white;
+                border: gold;
+                border-style: solid;
+                border-width: 8px;
+                border-radius: 15px;
+
+            }
+            input[type='text'],input[type='email'],input[type='date']
+			{
+                font-family: cursive;
+                width: 220px;
+                padding: 5px;
+				color:blue;
+            }
+            select,option{
+                font-family: cursive;
+                width: 230px;
+                padding: 5px;
+				color:blue;
+            }
+            input[type=submit]
+			{
+			width: 100px;
+                height: 40px;
+                font-family:  cursive;
+                font-size: 20px;
+				background-color: darkseagreen;
+                border-radius: 5px;
+			}
+            input[type=reset]{
+                width: 100px;
+                height: 40px;
+                font-family:  cursive;
+                font-size: 20px;
+				background-color: indianred;
+                border-radius: 5px;
+            }
+	input[type=submit]:hover,input[type=reset]:hover{
+                width: 100px;
+                height: 50px;
+                font-family:  cursive;
+                font-size: 20px;
+             
+                border-radius: 50px;
+            }
+            img{
+                width:95%;
+                height:140px;
+            }
+            td{
+                font-size: 20px;
+                font-family: cursive;
+            }
+            div
+            {
+                
+               background-color: gold; 
+            }
+        </style>
+
+
+    </head>
+    <body style="background-image:url('images/bd2.jpg')">
+         
+            <center>
+        <div id="frm">
+        
+                <form>
+				<header>
+                    <div >
+                        <img src="images\Alumni.jpg"/>
+                    </div>
+					</header>
+                    <h1>Alumni Registration Form</h1>
+                    <table>
+                        <tr>
+                            <td>Registration No</td>
+                            <td><input type="number"/></td>
+                        </tr>
+                        <tr>
+                            <td>Campus</td>
+                            <td>
+                                <select>
+                                    <option value="">Select Campus</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Thiruvallur">Thiruvallur</option>
+									<option value="Trichy">Trichy</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Institute</td>
+                            <td>
+                                <select>
+                                    <option value=" ">Select Institute</option>
+                                    <option value="COLLEGE OF ENGINEERING GUINDY">CEG</option> 
+                                    <option value="BHARATHIDASAN Institute OF TECHNOLOGY" >BIT</option>  
+                                    <Option value="MADRAS Institute OF TECHNOLOGY">MIT</Option>                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Program</td>
+                            <td>
+                                <select>
+                                    <option value=" ">Select Program</option>
+                                    <option value="C">C</option>    
+                                    <option value="C">C++</option>  
+                                    <option value="JAVA">JAVA</option>  
+                                    <option value="DOT.NET">DOT.NET</option>  
+                                    <option value="PHP">PHP</option>  
+                                    <option value="PYTHON">PYTHON</option>  
+                                    <option value="NETWORKING">NETWORKING</option>  
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <label><input type="radio" name="gender" value="Male"/>Male</label>
+                                <label><input type="radio" name="gender" value="Female"/>Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Marital Status</td>
+                            <td>
+                                <label><input type="radio" name="marital" value="Single"/>Single</label>
+                                <label><input type="radio" name="marital" value="Married"/>Married</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail ID</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Current Status</td>
+                            <td>
+                                <label><input type="radio" name="current" value="Working"/>Working</label>
+                                <label><input type="radio" name="current" value="Business"/>Business</label>
+                                <label><input type="radio" name="current" value="Home maker"/>Home maker</label>
+                                <label><input type="radio" name="current" value="Studying"/>Studying </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=""><b>Residence Address</b></td>    
+                        </tr>
+                        <tr>
+                            <td>Address Line1</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address Line2</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>
+                                <select>
+                                    <option value=" ">Select State</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>
+                                <select>
+                                    <option value=" ">Select Country</option>
+                                    <option value="India">India</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text"></td>
+                        </tr>  
+                        <tr>
+                            <td>Pin Code</td>
+                            <td><input type="text"></td>
+                        </tr> 
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="text"></td>
+                        </tr> 
+                        <tr>
+                            <td colspan="2" align="center">
+
+                               <input type="submit"  value="Submit">
+                                <input type="reset" value="Cancel">
+
+                            </td>
+                        </tr>
+                       
+                    </table>
+					<footer>
+                     <div style="height:110px">
+                            <p style="text-align:center; font-size:25px; color:blue"> 
+                                </br>
+                                No education is complete until it strengthens
+                                The very community from where it has found its roots.</br>
+                            Being an Amitian Comes with privileges. After all, every Amitian has earned it.
+                            </p>
+                            
+                           
+                        </div>
+						</footer>
+                    
+                </form>
+          
+         </div>
+                  </center>
+    </body>
+</html>
